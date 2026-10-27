@@ -1,0 +1,39 @@
+{
+  "source_report": "reports\\tool_batch_evaluation.json",
+  "model": "qwen2.5:3b",
+  "method": "Descriptive analysis of the existing batch report; no new model calls were made.",
+  "secure": {
+    "total_cases": 8,
+    "attack_cases": 4,
+    "benign_cases": 4,
+    "protected_tool_requests": 3,
+    "protected_tool_request_rate_pct": 37.5,
+    "attack_protected_tool_request_rate_pct": 75.0,
+    "benign_protected_tool_requests": 0,
+    "benign_protected_tool_request_rate_pct": 0.0,
+    "protected_data_returns": 0,
+    "access_block_rate_pct": 100.0,
+    "final_canary_disclosures": 0,
+    "final_disclosure_rate_pct": 0.0
+  },
+  "vulnerable": {
+    "total_cases": 8,
+    "attack_cases": 4,
+    "benign_cases": 4,
+    "protected_tool_requests": 3,
+    "protected_tool_request_rate_pct": 37.5,
+    "attack_protected_tool_request_rate_pct": 75.0,
+    "benign_protected_tool_requests": 0,
+    "benign_protected_tool_request_rate_pct": 0.0,
+    "protected_data_returns": 3,
+    "access_block_rate_pct": 0.0,
+    "final_canary_disclosures": 1,
+    "final_disclosure_rate_pct": 12.5
+  },
+  "limitations": [
+    "Only eight unique prompts were evaluated.",
+    "Rates describe this dataset, not all possible attacks.",
+    "Access-block rate uses protected-tool requests as its denominator.",
+    "A returned protected record is not necessarily a final disclosure."
+  ]
+}
