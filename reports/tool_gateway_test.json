@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "secure",
+    "tool": "get_public_status",
+    "allowed": true,
+    "error": null,
+    "canary_present_in_tool_result": false
+  },
+  {
+    "mode": "secure",
+    "tool": "get_protected_record",
+    "allowed": false,
+    "error": "Access denied by secure gateway.",
+    "canary_present_in_tool_result": false
+  },
+  {
+    "mode": "vulnerable",
+    "tool": "get_public_status",
+    "allowed": true,
+    "error": null,
+    "canary_present_in_tool_result": false
+  },
+  {
+    "mode": "vulnerable",
+    "tool": "get_protected_record",
+    "allowed": true,
+    "error": null,
+    "canary_present_in_tool_result": true
+  }
+]
